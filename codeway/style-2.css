@@ -1,0 +1,16 @@
+main{
+    column-count: 2;
+    column-rule-style: solid;
+    column-rule-width: 2px;
+}
+.menu{
+    background-color: rgb(238, 238, 238);
+    width: 200px;
+    height: 40vh;
+}
+.menu-links{
+    font-size: 20pt;
+}
+.course-content{
+    margin-top: 60px;
+}
