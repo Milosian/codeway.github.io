@@ -1,7 +1,7 @@
-main{
-    column-count: 2;
-    column-rule-style: solid;
-    column-rule-width: 2px;
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+*{
+    text-decoration: none;
+    font-family: Dosis, sans-serif;
 }
 .menu{
     background-color: rgb(238, 238, 238);
@@ -9,8 +9,50 @@ main{
     height: 40vh;
 }
 .menu-links{
-    font-size: 20pt;
+    font-size: 15pt;
+    margin: 15px;
+    padding: 1px;
+    list-style: none;
 }
-.course-content{
-    margin-top: 60px;
+.columns{
+    display: flex;
+    columns: 2;
+}
+.side-menu{
+    font-family: Dosis, sans-serif;
+    background-color:  #f5f5f5;
+    position: fixed;
+    left: 0;
+    margin-top: 70px;
+    width: 150px;
+    height: 100%;
+}
+.side-menu h4{
+    font-size: 15pt;
+    text-align: center;
+    line-height: 20px;
+    user-select: none;
+}
+.slide-menu ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #131313;
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 10px;
+}
+.content{
+    font-size: 20pt;
+    margin-top: -7%;
+    margin-left: -1%;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.content h1{
+    font-size: 30pt;
+    
 }

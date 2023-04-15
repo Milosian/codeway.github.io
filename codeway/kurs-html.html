@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-2.css">
-    <title>Document</title>
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+     
+
+    <title>Kurs HTML - UCZSIEZNAMI</title>
 </head>
 <body>
     <header>
@@ -21,34 +25,46 @@
         </nav>  
     </header>
     <main>
-        <p>
-            <nav class="menu">
-                <h4>Menu</h4>
-                <ul class="menu-links">
-                    <li>pierwszy</li>
-                    <li>drugi</li>
-                    <li>trzeci</li>
-                    <li>czwarty</li>
-                    <li>piąty</li>
-                </ul>
-            </nav>
-        </p>
-        <p class="content">
-            <div class="course-content">
-                <h2>Czym jest język HTML?</h2>
-                <p>HTML, czyli HyperText Markup Language, to język służący do tworzenia struktur i zawartości stron internetowych. 
+        <div class="wrapper">
+            <div class="columns">
+                <div class="side-menu">
+                    <h4>Menu</h4>
+                    <ul class="menu-links">
+                        <li><a href="#about-html">Html - wprowadzenie</a></li>
+                        <li><a href="#">Wstawianie tekst</a></li>
+                        <li><a href="#">Znaczniki</a></li>
+                        <li><a href="#">Akapit</a></li>
+                        <li><a href="#">Pogrubienie</a></li>
+                        <li><a href="#">Kursywa</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+
+                    </ul>
+                </div>
+                <div class="content">
+                    <h1>Kurs HTML - wszystko co musisz wiedzieć, aby zacząć</h1>
+                    <div id="about-html"></div>
+                    <h2 style="text-align: center;">Czym jest język HTML?</h2>
+                    <p>HTML, czyli HyperText Markup Language, to język służący do tworzenia struktur i zawartości stron internetowych. 
                         HTML definiuje różne elementy, takie jak nagłówki, paragrafy, obrazy i linki, a także umożliwia tworzenie formularzy, 
                         tabel i innych elementów interaktywnych na stronie internetowej. Kod HTML składa się z tagów (znaczników), 
                         które określają, jak dany fragment tekstu lub element powinien być interpretowany przez przeglądarkę internetową.
                         Przy użyciu HTML można również tworzyć linki, formularze, tabele i wiele innych elementów. 
                         Jest to podstawowy język używany przy tworzeniu stron internetowych i jest często łączony z innymi technologiami, 
-                        takimi jak CSS (arkusze stylów) i JavaScript, aby uzyskać bardziej zaawansowane i interaktywne strony internetowe.</p>
+                        takimi jak CSS (arkusze stylów) i JavaScript, aby uzyskać bardziej zaawansowane i interaktywne strony internetowe.</p><br>
+                </div>
             </div>
-        </p>
+        </div>
     </main>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        hljs.highlighAll();
+    </script>
     <footer>
-        <img src="logo.png" alt="logo strony">
-        <a href="portfolio.html">Poczytaj o nas :3</a>
+        <a href="./index.html"><img src="logo.png" alt="logo strony"></a>
+        <a href="portfolio.html">Poczytaj o twórcach strony :3</a>
         <p>© Strona chroniona prawami autorskimi</p>
     </footer>
 </body>
