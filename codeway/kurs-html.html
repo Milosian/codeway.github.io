@@ -27,7 +27,7 @@
             <div class="columns">
                 <nav>
                     <div class="side-menu">
-                        <h4>Navigator</h4>
+                        <h4>Nawigator</h4>
                         <ul class="menu-links">
                             <li><a href="#" class="navigate">Html - wprowadzenie</a></li>
                             <li><a href="#about-html-code" class="navigate">Struktura</a></li>
@@ -41,7 +41,6 @@
                                 <li><a href="#odsylacz">Odsyłacze</a></li>
                                 <li><a href="#naglowki">Nagłówki</a></li>
                                 <li><a href="#tabele">Tabele</a></li>
-                                
                             </ul></li>
                             <li><a href="#formularze" class="navigate">Formularze</a></li>
                         </ul>
@@ -190,19 +189,28 @@ Normalny tekst</code>
                             <p>Tabele </p>
                             Przykładowa struktura tabeli:
                             <pre>
-                                <code>
-&lt;h1&gt;Nagł&oacute;wek 1. stopnia&lt;/h1&gt;
-&lt;h2&gt;Nagł&oacute;wek 2. stopnia&lt;/h2&gt;
-&lt;h3&gt;Nagł&oacute;wek 3. stopnia&lt;/h3&gt;
-&lt;h4&gt;Nagł&oacute;wek 4. stopnia&lt;/h4&gt;
-&lt;h5&gt;Nagł&oacute;wek 5. stopnia&lt;/h5&gt;
-&lt;h6&gt;Nagł&oacute;wek 6. stopnia&lt;/h6&gt;
-                                </code>
+                                <code>&lt;table&gt;
+&lt;tr&gt;
+    &lt;td&gt;kom&oacute;rka1&lt;/td&gt;	&lt;td&gt;kom&oacute;rka2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;kom&oacute;rka3&lt;/td&gt;	&lt;td&gt;kom&oacute;rka4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code>
                             </pre>
                         </div>
                     
                     <div id="formularze">
                         <h3 style="line-height: 20vh; margin-bottom: -50px;">Formularze</h3>
+                        <p>Znacznik form jest wykorzystywany do stworzenia formularza. Znacznik ten same w sobie nie definiuje pól formularza takich jak "Imię" czy "Nazwisko", ale jest rodzicem dla tych pól.
+                            Najważniejszymi atrybutami znacznika form są action i method.</p>
+                            <pre>
+                                <code>&lt;form action=&quot;/send&quot; method=&quot;post&quot;&gt;
+   Imię: &lt;input type=&quot;text&quot; name=&quot;imie&quot;&gt;
+   Nazwisko: &lt;input type=&quot;text&quot; name=&quot;nazwisko&quot;&gt;
+   &lt;input type=&quot;submit&quot; value=&quot;Wyślij&quot;&gt;
+&lt;/form&gt;</code>
+                            </pre>
                     </div>
                 </div>
                 </div>
@@ -210,8 +218,6 @@ Normalny tekst</code>
             </div>
         </div>
     </main>
-    
-    
     <footer>
         <a href="./index.html"><img src="logo.png" alt="logo strony"></a>
         <a href="portfolio.html">Poczytaj o twórcach strony :3</a>
