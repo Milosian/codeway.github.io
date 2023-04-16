@@ -25,11 +25,13 @@
     left: 0;
     margin-top: 70px;
     width: 260px;
+    max-width: 300px;
     height: 100%;
     scroll-behavior: smooth;
     overflow: hidden;
     transition: width 0.2s linear;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+    flex: 1 1 0;
 }
 .side-menu h4{
     margin-top: 10px;
@@ -41,23 +43,42 @@
 .side-menu ul a{
     height: 100%;
     width: 100%;
+    display: block;
+    transition: 0.2s linear;
+}
+.side-menu ul a:hover,
+.side-menu ul a{
+    border-right: #5BCD65;
 }
 .side-menu li a{
     cursor: pointer;
     color: #131313;
 }
-ul li:hover a{
-    padding-left: 10px;
+ul li:hover .navigate{
+    color: #37b641;
+    padding-left: 10px; 
+}
+.tag-list{
+    margin-left: 15px;
+    list-style: none;
+}
+.tag-list li:hover a{
+    color: #37b641;
+    padding-left: 10px; 
 }
 .menu-links li{
     margin-top: 20px;
-    
 }
+/* @media (min-width: 768px) {
+    .side-menu{
+        max-width: 300px;
+    }
+} */
 .content-course{
     font-size: 16pt;
     padding: 12%;
     margin-top: -5vh;
-    margin-left: 300px;
+    margin-left: 250px;
     height: 100%;
     width: 100%;
     justify-content: center;
@@ -70,12 +91,15 @@ ul li:hover a{
     font-size: 30pt;
     margin-bottom: 40px;
     margin-left: 0.1%;
-
 }
 .content-course h2{
     margin-bottom: 30px;
+    line-height: 50px;
 }
 .content-course pre {
     width: 700px;
+}
+#describe-code ul li{
+    line-height: 40px;
 }
 

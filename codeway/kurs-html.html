@@ -29,19 +29,21 @@
                     <div class="side-menu">
                         <h4>Navigator</h4>
                         <ul class="menu-links">
-                            <li><a href="#about-html">Html - wprowadzenie</a></li>
-                            <li><a href="#about-html-code">Struktura</a></li>
-                            <li><a href="#describe-code">Znaczniki</a></li>
-                            <li><a href="#">Akapit</a></li>
-                            <li><a href="#">Pogrubienie</a></li>
-                            <li><a href="#">Kursywa</a></li>
-                            <li><a href="#">Podkreślenie</a></li>
-                            <li><a href="#">Wstawianie obrazka</a></li>
-                            <li><a href="#">Odsyłacze</a></li>
-                            <li><a href="#">Nagłówki i treść</a></li>
-                            <li><a href="#">Tabele</a></li>
-                            <li><a href="#">Formularze</a></li>
-                            <li><a href="#">Widżety</a></li>
+                            <li><a href="#" class="navigate">Html - wprowadzenie</a></li>
+                            <li><a href="#about-html-code" class="navigate">Struktura</a></li>
+                            <li><a href="#znaczniki" class="navigate">Znaczniki</a>
+                            <ul class="tag-list">
+                                <li><a href="#akapit">Akapit</a></li>
+                                <li><a href="#pogrubienie">Pogrubienie</a></li>
+                                <li><a href="#kursywa">Kursywa</a></li>
+                                <li><a href="#podkreslenie">Podkreślenie</a></li>
+                                <li><a href="#obrazek">Wstawianie obrazka</a></li>
+                                <li><a href="#odsylacz">Odsyłacze</a></li>
+                                <li><a href="#naglowki">Nagłówki</a></li>
+                                <li><a href="#tabele">Tabele</a></li>
+                                <li><a href="#formularze">Formularze</a></li>
+                            </ul></li>
+                            <li><a href="#widget" class="navigate">Widżety</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -49,7 +51,7 @@
                 <div class="content-course">
                     <div id="about-html"></div>
                     <h1>Kurs HTML - wszystko co musisz wiedzieć, aby zacząć</h1>
-                    <h2 style="text-align: center;">Trochę słów o HTML?</h2>
+                    <h2 style="text-align: center;">1. Trochę słów o HTML</h2>
                     <p>HTML, czyli HyperText Markup Language, to język służący do tworzenia struktur i zawartości stron internetowych. 
                         HTML definiuje różne elementy, takie jak nagłówki, paragrafy, obrazy i linki, a także umożliwia tworzenie formularzy, 
                         tabel i innych elementów interaktywnych na stronie internetowej. Kod HTML składa się z tagów (znaczników), 
@@ -58,7 +60,8 @@
                         Jest to podstawowy język używany przy tworzeniu stron internetowych i jest często łączony z innymi technologiami, 
                         takimi jak CSS (arkusze stylów) i JavaScript, aby uzyskać bardziej zaawansowane i interaktywne strony internetowe.</p><br>
                     <div id="about-html-code">
-                        <p>Poniżej przykładowa struktura kodu:</p>
+                        <h2 style="line-height: 20vh;">2. Struktura kodu</h2>
+                        <p style="margin-top: -60px;">Poniżej przykładowa struktura kodu:</p>
                         <pre>
                             <code>          
 &lt;!DOCTYPE HTML&gt;
@@ -98,10 +101,68 @@
                         </div>
                     </div>    
                     <div id="describe-code">
-                        <p>Wyjaśnienie poszczegółnych znaczników</p><br>
+                        <p>Wyjaśnienie poszczegółnych znaczników:</p><br>
                         <ul>
                             <li>html - określa, że strona jest dokumentem HTML.</li>
+                            <li>head - zawiera informacje o dokumencie, takie jak tytuł strony, meta tagi, styl CSS itp. Informacje te nie są wyświetlane w oknie przeglądarki.</li>
+                            <li>meta - definiuje informacje o dokumencie (opis strony, kodowanie znaków, słowa kluczowe itp.). Znacznik ten pomaga wyszukiwarkom internetowym w pozycjonowaniu strony</li>
+                            <li>title - określa tytuł strony internetowej, który jest wyświetlany na pasku tytułu przeglądarki.</li>
+                            <li>body - określa zawartość strony, która jest wyświetlana w przeglądarce internetowej. Wewnątrz elementu body znajdują się wszystkie elementy strony, takie jak nagłówki, tekst, obrazy, linki itp.</li>
+                            <li>header - nagłówek strony, który zazwyczaj zawiera logo, menu nawigacyjne i inne informacje na temat strony.</li>
+                            <li>main - definiuje główną treść strony, która jest zazwyczaj wyświetlana w centrum strony.</li>
+                            <li>nav -  określa menu nawigacyjne na stronie internetowej. </li>
+                            <li>section - sekcja strony internetowej, taka jak wpis na blogu, artykuł, galeria zdjęć itp.</li>
+                            <li>article - pojedynczy artykuł lub wpis na stronie internetowej.</li>
+                            <li>footer - zawiera informacje o autorze, prawach autorskich, linki do stron powiązanych itp.</li>
                         </ul>
+                    </div>
+                    <div id="znaczniki">
+                        <h2 style="line-height: 20vh;">3. Znaczniki</h2>
+                        <div id="akapit" style="margin-top: -6vh;">
+                            <h3>Akapit</h3>
+                            <p style="line-height: 50px;">Akapit zawsze zaczyna się od nowej linii i jest zazwyczaj blokiem tekstu.</p>
+                            <pre>
+                                <code>
+&lt;p&gt;To jest paragraf&lt;/p&gt;
+&lt;p&gt;To też jest paragraf&lt;/p&gt;
+                                </code>
+                            </pre>
+                        </div>
+                        <div id="pogrubienie">
+                            <h3>Pogrubienie tekstu</h3>
+                            <p>Znacznik pogrubionego tekstu sprawi, że Twój tekst zostanie wyświetlony jako <b>pogrubiony</b>.</p>
+                            <pre>
+                                <code>
+&lt;b&gt;Pogrubiony tekst&lt;/b&gt;
+Normalny tekst
+                                </code>
+                            </pre>
+                        </div>
+                        <div id="kursywa">
+
+                        </div>
+                        <div id="podkreslenie">
+
+                        </div>
+                        <div id="obrazek">
+
+                        </div>
+                        <div id="odsylacz">
+
+                        </div>
+                        <div id="naglowki">
+
+                        </div>
+                        <div id="tabele">
+
+                        </div>
+                        <div id="formularze">
+                            
+                        </div>
+                    </div>
+                    
+                    <div id="widget">
+                        
                     </div>
                 </div>
             </div>

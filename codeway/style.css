@@ -53,11 +53,13 @@ header{
 .section1{
     font-family: 'Dosis', sans-serif;
     background-image: url(main.jpg);
-    background-size: 85%;
+    background-size: 80%;
     background-attachment: fixed;
-    background-position: right;
+    background-position: right top;
     background-repeat: no-repeat;
     height: 100vh;
+    width: 100%;
+    justify-content: space-between;
     display: flex;
 }
 .section1 a{
@@ -72,7 +74,10 @@ header{
 .content{
     padding: 12%;
     margin-top: 100px;
-    font-size: 28pt;
+    font-size: 22pt;
+}
+.content a{
+    box-shadow: 2px 1px 4px var(--main-color);
 }
 .section1 p{    
     margin: 10px;
@@ -107,6 +112,11 @@ header{
     font-size: 15pt;
     color: #5BCD65;
     padding: 5px;
+}
+.read-btn:hover{
+    background-color: #5BCD65;
+    color: #f5f5f5;
+    transition: 0.3s;
 }
 .logoHTML{
     justify-items: center;
