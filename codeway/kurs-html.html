@@ -27,11 +27,11 @@
             <div class="columns">
                 <nav>
                     <div class="side-menu">
-                        <h4>Menu</h4>
+                        <h4>Navigator</h4>
                         <ul class="menu-links">
                             <li><a href="#about-html">Html - wprowadzenie</a></li>
-                            <li><a href="#">Wstawianie tekst</a></li>
-                            <li><a href="#">Znaczniki</a></li>
+                            <li><a href="#about-html-code">Struktura</a></li>
+                            <li><a href="#describe-code">Znaczniki</a></li>
                             <li><a href="#">Akapit</a></li>
                             <li><a href="#">Pogrubienie</a></li>
                             <li><a href="#">Kursywa</a></li>
@@ -49,7 +49,7 @@
                 <div class="content-course">
                     <div id="about-html"></div>
                     <h1>Kurs HTML - wszystko co musisz wiedzieć, aby zacząć</h1>
-                    <h2 style="text-align: center;">Czym jest język HTML?</h2>
+                    <h2 style="text-align: center;">Trochę słów o HTML?</h2>
                     <p>HTML, czyli HyperText Markup Language, to język służący do tworzenia struktur i zawartości stron internetowych. 
                         HTML definiuje różne elementy, takie jak nagłówki, paragrafy, obrazy i linki, a także umożliwia tworzenie formularzy, 
                         tabel i innych elementów interaktywnych na stronie internetowej. Kod HTML składa się z tagów (znaczników), 
@@ -57,27 +57,52 @@
                         Przy użyciu HTML można również tworzyć linki, formularze, tabele i wiele innych elementów. 
                         Jest to podstawowy język używany przy tworzeniu stron internetowych i jest często łączony z innymi technologiami, 
                         takimi jak CSS (arkusze stylów) i JavaScript, aby uzyskać bardziej zaawansowane i interaktywne strony internetowe.</p><br>
-                        
+                    <div id="about-html-code">
                         <p>Poniżej przykładowa struktura kodu:</p>
                         <pre>
-                            <code>
+                            <code>          
+&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&quot;pl&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;/&gt;
+        &lt;meta name=&quot;description&quot; content=&quot;&quot; /&gt;
+        &lt;meta name=&quot;keywords&quot; content=&quot;&quot; /&gt;
+        &lt;title&gt;Tytuł strony&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Nagł&oacute;wek h1&lt;/h1&gt;
+        &lt;/header&gt;
                                 
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;Tytuł strony&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;h1&gt;To jest nagłowek h1&lt;/h1&gt;
-&lt;p&gt;To jest paragraf.&lt;/p&gt;
-
-&lt;/body&gt;
+        &lt;nav&gt;Nawigacja&lt;/nav&gt;
+                                
+        &lt;main&gt;
+            &lt;section&gt;
+                &lt;article&gt;
+                    &lt;h2&gt;Artykuł pierwszej w nagłówku h2&lt;/h2&gt;
+                    &lt;p&gt;To jest treść artykułu.&lt;/p&gt;
+                &lt;/article&gt;
+            &lt;/section&gt;
+        &lt;/main&gt;
+                                
+        &lt;footer&gt;
+        Stopka
+        &lt;/footer&gt;
+    &lt;/body&gt;
 &lt;/html&gt;
-                                
-                                
+                    
                             </code>
                         </pre>
+                        <div>
+                            
+                        </div>
+                    </div>    
+                    <div id="describe-code">
+                        <p>Wyjaśnienie poszczegółnych znaczników</p><br>
+                        <ul>
+                            <li>html - określa, że strona jest dokumentem HTML.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
