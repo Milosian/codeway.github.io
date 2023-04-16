@@ -38,21 +38,24 @@
     height: 100%;
     width: 100%;
     color: #131313;
-    transition: .4s;
 }
 ul li:hover a{
     padding-left: 10px;
 }
-.content{
-    font-size: 20pt;
-    margin-top: -7%;
+.content-course{
+    font-size: 18pt;
+    padding: 12%;
+    margin-top: -100px;
     margin-left: -1%;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
     
 }
-.content h1{
+.content-course h1{
     font-size: 30pt;
-    
+    margin-bottom: 40px;
+}
+.content-course h2{
+    margin-bottom: 30px;
 }
