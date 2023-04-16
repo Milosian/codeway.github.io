@@ -24,7 +24,7 @@
     position: fixed;
     left: 0;
     margin-top: 70px;
-    width: 150px;
+    width: 160px;
     height: 100%;
 }
 .side-menu h4{
@@ -39,23 +39,32 @@
     width: 100%;
     color: #131313;
 }
+.slide-menu li a{
+    margin-top: 40px;
+    cursor: pointer;
+}
 ul li:hover a{
     padding-left: 10px;
 }
 .content-course{
-    font-size: 18pt;
+    font-size: 16pt;
     padding: 12%;
     margin-top: -100px;
     margin-left: -1%;
     height: 100%;
     width: 100%;
-    box-sizing: border-box;
-    
+    justify-content: center;
 }
 .content-course h1{
     font-size: 30pt;
     margin-bottom: 40px;
+    margin-left: 0.1%;
+
 }
 .content-course h2{
     margin-bottom: 30px;
 }
+.content-course pre {
+    width: 600px;
+}
+

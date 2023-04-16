@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-2.css">
-    <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
-     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
 
     <title>Kurs HTML - UCZSIEZNAMI</title>
 </head>
@@ -27,28 +25,30 @@
     <main>
         <div class="wrapper">
             <div class="columns">
-                <div class="side-menu">
-                    <h4>Menu</h4>
-                    <ul class="menu-links">
-                        <li><a href="#about-html">Html - wprowadzenie</a></li>
-                        <li><a href="#">Wstawianie tekst</a></li>
-                        <li><a href="#">Znaczniki</a></li>
-                        <li><a href="#">Akapit</a></li>
-                        <li><a href="#">Pogrubienie</a></li>
-                        <li><a href="#">Kursywa</a></li>
-                        <li><a href="#">Podkreślenie</a></li>
-                        <li><a href="#">Wstawianie obrazka</a></li>
-                        <li><a href="#">Odsyłacze</a></li>
-                        <li><a href="#">Nagłówki i treść</a></li>
-                        <li><a href="#">Tabele</a></li>
-                        <li><a href="#">Formularze</a></li>
-                        <li><a href="#">Widżety</a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </div>
+                <nav>
+                    <div class="side-menu">
+                        <h4>Menu</h4>
+                        <ul class="menu-links">
+                            <li><a href="#about-html">Html - wprowadzenie</a></li>
+                            <li><a href="#">Wstawianie tekst</a></li>
+                            <li><a href="#">Znaczniki</a></li>
+                            <li><a href="#">Akapit</a></li>
+                            <li><a href="#">Pogrubienie</a></li>
+                            <li><a href="#">Kursywa</a></li>
+                            <li><a href="#">Podkreślenie</a></li>
+                            <li><a href="#">Wstawianie obrazka</a></li>
+                            <li><a href="#">Odsyłacze</a></li>
+                            <li><a href="#">Nagłówki i treść</a></li>
+                            <li><a href="#">Tabele</a></li>
+                            <li><a href="#">Formularze</a></li>
+                            <li><a href="#">Widżety</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                
                 <div class="content-course">
-                    <h1>Kurs HTML - wszystko co musisz wiedzieć, aby zacząć</h1>
                     <div id="about-html"></div>
+                    <h1>Kurs HTML - wszystko co musisz wiedzieć, aby zacząć</h1>
                     <h2 style="text-align: center;">Czym jest język HTML?</h2>
                     <p>HTML, czyli HyperText Markup Language, to język służący do tworzenia struktur i zawartości stron internetowych. 
                         HTML definiuje różne elementy, takie jak nagłówki, paragrafy, obrazy i linki, a także umożliwia tworzenie formularzy, 
@@ -57,19 +57,39 @@
                         Przy użyciu HTML można również tworzyć linki, formularze, tabele i wiele innych elementów. 
                         Jest to podstawowy język używany przy tworzeniu stron internetowych i jest często łączony z innymi technologiami, 
                         takimi jak CSS (arkusze stylów) i JavaScript, aby uzyskać bardziej zaawansowane i interaktywne strony internetowe.</p><br>
+                        
+                        <p>Poniżej przykładowa struktura kodu:</p>
+                        <pre>
+                            <code>
+                                
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Tytuł strony&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;To jest nagłowek h1&lt;/h1&gt;
+&lt;p&gt;To jest paragraf.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                                
+                                
+                            </code>
+                        </pre>
                 </div>
             </div>
         </div>
     </main>
     
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-    <script>
-        hljs.highlighAll();
-    </script>
+    
     <footer>
         <a href="./index.html"><img src="logo.png" alt="logo strony"></a>
         <a href="portfolio.html">Poczytaj o twórcach strony :3</a>
         <p>© Strona chroniona prawami autorskimi</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
