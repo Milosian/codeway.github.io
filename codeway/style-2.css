@@ -96,10 +96,14 @@ ul li:hover .navigate{
     margin-bottom: 30px;
     line-height: 50px;
 }
-.content-course pre {
+.content-course pre code{
     width: 700px;
+    border-radius: 10px;
 }
 #describe-code ul li{
     line-height: 40px;
 }
-
+#znaczniki h2{
+    line-height: 20vh; 
+    margin-bottom: -50px;
+}

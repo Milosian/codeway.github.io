@@ -41,9 +41,9 @@
                                 <li><a href="#odsylacz">Odsyłacze</a></li>
                                 <li><a href="#naglowki">Nagłówki</a></li>
                                 <li><a href="#tabele">Tabele</a></li>
-                                <li><a href="#formularze">Formularze</a></li>
+                                
                             </ul></li>
-                            <li><a href="#widget" class="navigate">Widżety</a></li>
+                            <li><a href="#formularze" class="navigate">Formularze</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -117,53 +117,95 @@
                         </ul>
                     </div>
                     <div id="znaczniki">
-                        <h2 style="line-height: 20vh;">3. Znaczniki</h2>
-                        <div id="akapit" style="margin-top: -6vh;">
-                            <h3>Akapit</h3>
-                            <p style="line-height: 50px;">Akapit zawsze zaczyna się od nowej linii i jest zazwyczaj blokiem tekstu.</p>
+                            <h2>3. Znaczniki</h2>
+                            Znacznik jest to specjalny tekst umieszczony w nawiasach ostrych.  
+                            Jest częścią składni języka HTML i pozwala sterować wyglądem strony. 
+                            Dzięki niemu możesz np. ustalić kolor tła, rodzaj formatowania tekstu, wstawić obrazek czy tabelę itd.</div>
+                        
+                        <div id="akapit">
+                            <h3 style="line-height: 20vh; margin-bottom: -50px;">Akapit</h3>
+                            <p>Akapit zawsze zaczyna się od nowej linii i jest zazwyczaj blokiem tekstu.</p>
                             <pre>
-                                <code>
-&lt;p&gt;To jest paragraf&lt;/p&gt;
-&lt;p&gt;To też jest paragraf&lt;/p&gt;
-                                </code>
+                                <code style="height: 20%;">&lt;p&gt;To jest paragraf&lt;/p&gt;
+&lt;p&gt;To też jest paragraf&lt;/p&gt;</code>
                             </pre>
                         </div>
                         <div id="pogrubienie">
-                            <h3>Pogrubienie tekstu</h3>
+                            <h3 style="line-height: 20vh; margin-bottom: -50px;">Pogrubienie tekstu</h3>
                             <p>Znacznik pogrubionego tekstu sprawi, że Twój tekst zostanie wyświetlony jako <b>pogrubiony</b>.</p>
                             <pre>
-                                <code>
-&lt;b&gt;Pogrubiony tekst&lt;/b&gt;
-Normalny tekst
-                                </code>
+                                <code style="height: 20%;">&lt;b&gt;Pogrubiony tekst&lt;/b&gt;
+Normalny tekst</code>
                             </pre>
                         </div>
                         <div id="kursywa">
-
+                            <h3 style="line-height: 20vh; margin-bottom: -50px;">Pochylenie tekstu - kursywa</h3>
+                            <p>Ten znacznik umożliwi Ci utworzenie tekstu <i>pochylonego</i></p>
+                            <pre>
+                                <code style="height: 20%;">&lt;i&gt;Pochylony tekst&lt;/i&gt;
+Normalny tekst</code>
                         </div>
                         <div id="podkreslenie">
-
+                            <h3 style="line-height: 20vh; margin-bottom: -50px;">Podkreślenie tekstu</h3>
+                            <p>Znacznik podkreslenia sprawi, że tekst jest <u>podreślony</u></p>
+                            <pre>
+                                <code style="height: 20%;">&lt;u&gt;Podkreślony tekst&lt;/u&gt;
+Normalny tekst</code>
                         </div>
+                        
                         <div id="obrazek">
-
+                            <h3 style="line-height: 20vh; margin-bottom: -50px;">Wstawianie obrazka</h3>
+                            <p>By wstawić zdjęcie, należy zastosować znacznik img.</p>
+                            <pre>
+                                <code>&lt;img src=&quot;ścieżka dostępu do obrazka&quot; alt=&quot;Tu podaj tekst alternatywny&quot;&gt;</code>
+                            </pre>
                         </div>
                         <div id="odsylacz">
-
+                            <h3 style="line-height: 20vh; margin-bottom: -50px;">Odsyłacze</h3>
+                            <p>Odsyłacze praktycznie znajdują się na każdej stronie. Może być on zawarty w wyróżnionym hasłowym tekście, bądź w formie obrazka.</p><br>
+                            Poniższy znacznik odsyła do podstrony:
+                            <pre>
+                                <code>&lt;a href=&quot;ścieżka dostępu do podstrony&quot;&gt;opis odsyłacza&lt;/a&gt;</code>
+                            </pre>
+                            <p>Istnieją także odsyłacze do adresu internetowego</p>
+                            <pre>
+                                <code>&lt;a href=&quot;adres internetowy&quot;&gt;opis odsyłacza&lt;/a&gt;</code>
+                            </pre>
                         </div>
                         <div id="naglowki">
-
+                            <h3 style="line-height: 20vh; margin-bottom: -50px;">Nagłówki</h3>
+                            Znaczniki h1, h2, h3, h4, h5, h6 są stosowane do oznaczenia nagłówka tekstu.
+                            Dla przykładu, tytuł artykułu na blogu będzie oznaczony h1 a podtytuł h2. Takie stopniowanie ważności kończy się na znaczniku h6.
+                            <pre>
+                                <code>&lt;h1&gt;Nagł&oacute;wek 1. stopnia&lt;/h1&gt;
+&lt;h2&gt;Nagł&oacute;wek 2. stopnia&lt;/h2&gt;
+&lt;h3&gt;Nagł&oacute;wek 3. stopnia&lt;/h3&gt;
+&lt;h4&gt;Nagł&oacute;wek 4. stopnia&lt;/h4&gt;
+&lt;h5&gt;Nagł&oacute;wek 5. stopnia&lt;/h5&gt;
+&lt;h6&gt;Nagł&oacute;wek 6. stopnia&lt;/h6&gt;</code>
+                            </pre>
                         </div>
                         <div id="tabele">
-
+                            <h3 style="line-height: 20vh; margin-bottom: -50px;"h3>Tabele</h3>
+                            <p>Tabele </p>
+                            Przykładowa struktura tabeli:
+                            <pre>
+                                <code>
+&lt;h1&gt;Nagł&oacute;wek 1. stopnia&lt;/h1&gt;
+&lt;h2&gt;Nagł&oacute;wek 2. stopnia&lt;/h2&gt;
+&lt;h3&gt;Nagł&oacute;wek 3. stopnia&lt;/h3&gt;
+&lt;h4&gt;Nagł&oacute;wek 4. stopnia&lt;/h4&gt;
+&lt;h5&gt;Nagł&oacute;wek 5. stopnia&lt;/h5&gt;
+&lt;h6&gt;Nagł&oacute;wek 6. stopnia&lt;/h6&gt;
+                                </code>
+                            </pre>
                         </div>
-                        <div id="formularze">
-                            
-                        </div>
-                    </div>
                     
-                    <div id="widget">
-                        
+                    <div id="formularze">
+                        <h3 style="line-height: 20vh; margin-bottom: -50px;">Formularze</h3>
                     </div>
+                </div>
+                </div>
                 </div>
             </div>
         </div>
