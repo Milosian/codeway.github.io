@@ -26,19 +26,14 @@
             <h1>Amelia Klar</h1>
             <p>Uczennica technikum im. Św Józefa w Kaliszu</p>
         </div>
-        
-        <div class="hr"></div>
-        
-        <div class="milosz">
-            <img src="css-logo.png" alt="" class="zdjecia">
+        <div class="milosz" style="margin-top:30px ;">
+            <img src="IMG_3855.png" alt="" class="zdjecia">
             <h1>Miłosz Kaczmarek</h1>
             <p>Uczeń technikum im. Św Józefa w Kaliszu</p>
         </div>
     </div>
 </body>
 </html>
-
-
 
 <style>
     *{
@@ -68,27 +63,33 @@
         margin-right: auto;
         align-items: left;
         width: 35%;
+        user-select: none;
     }
     body{
         background: rgba(135, 135, 135, 0.12);
-    }
-    #logo{
-        margin-right: auto;
     }
     .container{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 150px;
     }
     .zdjecia{
         border-radius: 50%;
-        margin: 0 50px;
+        /* margin: 0 50px; */
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: 70%;
+        user-select: none;
     }
-    .napis{
-        font-weight: bold;
+    h1, p, .amelia, .milosz{
         font-size: 24px;
-        text-align: center;
-        margin: 0;
+        text-align: center;    
+    }
+    h1{
+        font-weight: bold;
     }
 
 </style>

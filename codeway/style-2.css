@@ -30,7 +30,7 @@
     scroll-behavior: smooth;
     overflow: hidden;
     transition: width 0.2s linear;
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 35px     ;
     flex: 1 1 0;
 }
 .side-menu h4{
@@ -107,13 +107,16 @@ ul li:hover .navigate{
     line-height: 20vh; 
     margin-bottom: -50px;
 }
+.typy-cech li{
+    margin-top: 20px;
+}
 footer {
     position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 4px 1%;
-    background: rgba(135, 135, 135, 0.12);
+    background: rgb(236, 236, 236);
 }
 footer a {
     text-decoration: none;

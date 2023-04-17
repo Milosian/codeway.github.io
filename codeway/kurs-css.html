@@ -33,26 +33,26 @@
                             <li><a href="#model" class="navigate">Model</a></li>
                             <li><a href="#podpinanie" class="navigate">Podpinanie</a></li>
                             <li><a href="#selektory" class="navigate">Selektory</a></li>  
-                            <li><a href="#wlasnosci" class="navigate">Własnośći</a>
+                            <li><a href="#wlasciwosci" class="navigate">Właściwości</a>
                                 <ul class="tag-list">
                                     <li><a href="#kolory">Kolory</a></li>
                                 </ul>
+                                <li><a href="#marginesy" class="navigate">Margines</a>
+                                    <ul class="tag-list">
+                                        <li><a href="#wewnetrzne">Wewnętrzny</a></li>
+                                        <li><a href="#zewnterzne">Zewnętrzny</a></li>
+                                    </ul>
+                                </li>
                             </li>
-                            <li><a href="#marginesy" class="navigate">Margines</a>
-                                <ul class="tag-list">
-                                    <li><a href="#wewnetrzne">Wewnętrzny</a></li>
-                                    <li><a href="#zewnterzne">Zewnętrzny</a></li>
-                                </ul>
-                            </li>
+                            
                             <li><a href="#dziedziczenie" class="navigate">Dziedziczenie</a></li>
-                            <li><a href="#" class="navigate">Media</a></li>
                         </ul>
                     </div>
                 </nav>
                 <div class="content-course">
                     <div id="wprowadzenie">
                         <h1>Kurs CSS - wszystko co musisz wiedzieć, aby zacząć.</h1>
-                        <h2 style="text-align: center;">1. Trochę słów o CSS?</h2>
+                        <h2 style="text-align: center;">1. Trochę słów o CSS</h2>
                         <p>CSS (Cascading Style Sheets) jest językiem używanym do opisu prezentacji i formatowania dokumentów HTML (Hypertext Markup Language). 
                             Jest on używany do dodawania kolorów, czcionek, układu i innych stylów do stron internetowych. 
                             CSS jest potężnym narzędziem, które pozwala programistom na oddzielenie stylu strony internetowej od jej zawartości, co ułatwia jej utrzymanie i aktualizację. 
@@ -62,8 +62,8 @@
                             </p><br>
                     </div>
                     <div id="model">
-                        <h2 style="line-height: 20vh;">2. Model CSS</h2>
-                        <p>Poniżej kod HTML, który zostanie poddany obróbce</p>
+                        <h2 style="line-height: 22vh;">2. Model CSS</h2>
+                        <p style="margin-top: -80px;">Poniżej kod HTML, który zostanie poddany obróbce</p>
                         <pre>
                             <code>&lt;p&gt;To jest paragraf, który dostał nowego wyglądu&lt;/p&gt;</code>
                         </pre>
@@ -78,8 +78,8 @@
 }</code>
                     </div>
                     <div id="podpinanie">
-                        <h2 style="line-height: 20vh;">3. Podpinanie kodu</h2>
-                    <h2>
+                        <h2 style="line-height: 22vh;">3. Podpinanie kodu</h2>
+                    <h2 style="margin-top: -80px;">
                         I sposób - Podłączenie pliku CSS
                     </h2>
                     
@@ -105,7 +105,7 @@
                         <p>Drugim sposobem jest osadzenie stylów CSS wewnątrz kodu HTML pomiędzy znacznikami style. <br>
                             Ten sposób jest przydatny tylko w małych projektach lub gdy jest potrzebny tylko w poszczególnych
                             fragmentach kodu.</p> 
-                        <p style="line-height: 60px;">Oto przykładowy kod:</p>
+                        <p style="line-height: 80px;">Oto przykładowy kod:</p>
                         <pre>
                             <code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;pl&quot;&gt;
@@ -129,8 +129,8 @@
                             </code>
                         </pre>
                         <h2>III sposób - wstawienie CSS w poszczególnych tagach</h2>
-                        <p>Kiedy chcemy zmienić styl konkretnego elementu na stronie, należy przypisać wartości CSS za pomocą atrybutu styl="".</p> 
-                        <p style="line-height: 60px;">Oto przykładowy kod:</p>
+                        <p>Kiedy chcemy zmienić styl konkretnego elementu na stronie, należy przypisać wartości CSS za pomocą atrybutu style="".</p> 
+                        <p style="line-height: 80px;">Oto przykładowy kod:</p>
                         <pre>
                             <code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;pl&quot;&gt;
@@ -150,19 +150,102 @@
                     </div>
                     
                     <div id="selektory">
-                        <h2 style="line-height: 20vh;">4. Selektory</h2>
+                        <h2 style="line-height: 22vh;">4. Selektory</h2>
+                        <p style="margin-top: -80px;">Selektory są przydatne, by wskazać dany element,tag w HTML, który chcemy edytować.</p>
+                        <img src="./sel.png" alt="selektor-image" style="width: 90%; margin-top: 20px;">
                     </div>
-                    <div id="kaskada">
-                        <h2 style="line-height: 20vh;">5. Kaskada</h2>
-                    </div>
-                    <div id="wlasnosci">
-                        <h2 style="line-height: 20vh;">6. Własnośći</h2>
+                    <div id="wlasciwosci">
+                        <h2 style="line-height: 20vh;">5. Właściwości</h2>
+                        <p style="margin-top: -80px;">Właściwości CSS jest szeroka gama i trzeba podzielić je na kategorie. Wyróżniamy poszczególne typy:</p>
+                            <ul class="typy-cech">
+                                <li>Tekst - właściwości odpowiedzialne za formatowanie cech wyglądu tekstu. <br> 
+                                      Przykład: text-align: right; - przesuwa tekst na prawo.
+                                </li>
+                                <li>Czcionka - właściwości odpowiedzialne za formatowanie wyglądu czcionki tekstu.
+                                    Przykład: font-size: 12pt; - rozmiar czcionki równy 12pt <br>
+                                    lub font-familly: Arial, sans-serif; - zmienia typ czcionki na typ z rodziny Arial.<br>
+                                </li>
+                                <li>Tło -  właściwości odpowiedzialne za formatowanie cech wyglądu tła .<br>
+                                    Przykład: background-color: white; - zmienia kolor tła na biały.
+                                </li>
+                                <li>Rozmiary -  właściwości odpowiedzialne za formatowanie szerokości i wysokości. <br>
+                                    Przykład: width: 50%; - szerokość elementu wynosi
+                                </li>
+                                <li>Marginesy - właściwości odpowiedzialne za formatowanie wartości marginesów wewnętrznych i zewnętrznych. <br>
+                                    Przykład: margin: 20px - wszystkie marginesy zewnętrzne wynoszą 20px.
+                                </li>
+                                <li>Obramowanie - właściwości odpowiedzialne za formatowanie cech wyglądu obramowania.<br>
+                                    Przykład border-style: solid - zmienia styl obramowania na solid, czyli linia ciągła.
+                                </li>
+                            </ul>
                         <div id="kolory">
-                            <h2 style="line-height: 20vh;">Kolor</h2>
+                            <h2 style="line-height: 20vh;">Kolory</h2>
+                            <p style="margin-top: -80px;">Kolory w CSS (Kaskadowych Arkuszach Stylów) są używane do nadawania kolorów elementom HTML na stronach internetowych. W CSS, kolory można ustawić za pomocą różnych formatów, takich jak nazwy kolorów, wartości heksadecymalne, wartości RGB, wartości HSL i wiele innych. Oto niektóre z najpopularniejszych sposobów ustawiania kolorów w CSS:</p>
+                            <br><br>
+                            <ul>
+                                <li>Nazwy kolorów: CSS posiada wbudowany zestaw nazw kolorów, takich jak "red", "blue", "green", itp. Można je użyć bezpośrednio w atrybucie koloru CSS. Na przykład:</li>
+                                <pre>
+                                    <code>p {color: red;}</code>
+                                </pre>
+
+                                <li>Wartości heksadecymalne: Kolory w formacie heksadecymalnym składają się z sześciu znaków, które reprezentują kombinację trzech składowych koloru - czerwonej, zielonej i niebieskiej. Na przykład:</li>
+                                <pre>
+                                    <code>p {
+    color: #ff0000; /* czerwony */
+    background-color: #00ff00; /* zielony */
+    }</code>
+                                </pre>
+                                
+                                <li>Wartości RGB: Kolory można również określać za pomocą wartości RGB, które reprezentują poziomy czerwieni, zieleni i niebieskiego w zakresie od 0 do 255. Na przykład:</li>
+                                <pre>
+                                    <code>p {
+    color: rgb(255, 0, 0); /* czerwony */
+    background-color: rgb(0, 255, 0); /* zielony */
+    }</code>
+                                </pre>
+                                
+                                <li>Wartości HSL: CSS obsługuje również wartości kolorów w formacie HSL, który reprezentuje odcień, nasycenie i jasność koloru. Na przykład:</li>
+                                <pre>
+                                  <code>p {
+    color: hsl(0, 100%, 50%); /* czerwony */
+    background-color: hsl(120, 100%, 50%); /* zielony */
+    }
+                                  </code>
+                                </pre>
+                            </ul>
+                            <p>Wartości kolorów w CSS można stosować w różnych atrybutach, takich jak "color", "background-color", "border-color" i innych, aby dostosować wygląd elementów na stronie internetowej.</p>
                         </div>
                     </div>
                     <div id="marginesy">
-                        <h2 style="line-height: 20vh;">7. Marginesy</h2>
+                        <h2 style="line-height: 22vh;">6. Marginesy</h2>
+                        <p style="margin-top: -80px;">Marginesy zewnętrzne i wewnętrzne w CSS są używane do kontrolowania odstępów wokół elementów HTML na stronach internetowych. Oto krótkie wyjaśnienie różnicy między marginesami zewnętrznymi a wewnętrznymi oraz jak można je ustawić za pomocą kursu CSS:</ p>
+                        <h2 style="line-height: 22vh;">Margines wewnętrzny</h2>
+                        <p style="margin-top: -80px;">Marginesy wewnętrzne: Marginesy wewnętrzne są stosowane do kontrolowania odstępów między zawartością elementu HTML a jego ramką. Marginesy wewnętrzne wpływają na rozmiar samego elementu. Można je ustawić za pomocą właściwości CSS takich jak "padding-top", "padding-right", "padding-bottom" i "padding-left". Na przykład:</p> <br>
+                        <pre><code>div {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    }</code></pre><br>
+    <p>Podobnie jak w przypadku marginesów zewnętrznych, można również użyć skróconej notacji "padding", aby ustawić wszystkie marginesy naraz:</p><br>
+    <pre><code>div {
+        padding: 10px 20px; /* górny/dolny margines: 10px, prawy/lewy margines: 20px */
+      }</code></pre>
+                        <h2 style="line-height: 22vh;">Margines zewnętrzny</h2>
+                        <p style="margin-top: -80px;">Marginesy zewnętrzne: Marginesy zewnętrzne są stosowane do kontrolowania odstępów między elementem HTML a jego otoczeniem, czyli innymi elementami na stronie. Marginesy zewnętrzne nie wpływają na rozmiar samego elementu, ale mogą wpłynąć na układ strony jako całości. Można je ustawić za pomocą właściwości CSS takich jak "margin-top", "margin-right", "margin-bottom" i "margin-left". Na przykład:</p><br>
+                        
+                        <pre><code>div {
+margin-top: 10px;
+margin-right: 20px;
+margin-bottom: 10px;
+margin-left: 20px;
+}
+                        </code></pre><br>
+                        <p>Można również użyć skróconej notacji "margin", aby ustawić wszystkie marginesy naraz:</p><br>
+                        <pre><code>div {
+margin: 10px 20px; /* górny/dolny margines: 10px, prawy/lewy margines: 20px */
+}
+                        </code></pre>
                     </div>
                     <div id="dziedziczenie"></div>
                 </div>

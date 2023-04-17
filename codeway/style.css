@@ -33,11 +33,12 @@ header{
     margin-right: auto;
     align-items: left;
     width: 35%;
+    user-select: none;
 }
 /* Links */
 .links{
     position: relative;
-    color: #5BCD65;
+    color: #47aa50;
     text-decoration: none;
     font-weight: 500;
     font-size: 25px;
@@ -53,6 +54,7 @@ header{
 /* End links edit */
 /* Section 1 */
 .section1 {
+    user-select: none;
     background-image: url(hero.png);
     background-size: 80%;
     background-attachment: fixed;
@@ -130,34 +132,37 @@ header{
     margin-left: 170px;
     padding-bottom: 50px;
     width: 25%;
+    user-select: none;
 }
 .logoCSS{
     justify-items: center;
     margin-left: 100px;
     padding-bottom: 58px;
     width: 35%;
+    user-select: none;
 }
 .logoJS{
     justify-items: center;
     margin-left: 200px;
     padding-bottom: 5px;
     width: 25%;
+    user-select: none;
 }
 /* End of section 2 */
 /* footer */
 footer {
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; 
     align-items: center;
-    padding: 4px 1%;
-    background: rgba(135, 135, 135, 0.12);
-  }
+     padding: 4px 1%; 
+    background-color: rgb(240, 240, 240);
+}
   
-  footer a {
+footer a {
     text-decoration: none;
     color: black;
     font-weight: bolder;
     margin: 20px;
-  }
+}
   
