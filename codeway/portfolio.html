@@ -19,54 +19,76 @@
             </ul>
         </nav>  
     </header>
-<div class="amelia">
-    <img src="Amelia.png" alt="" id="Amelia">
-    <h1>Amelia Klar</h1>
-    <p>Uczennica technikum im. Św Józefa w Kaliszu</p>
-</div>
 
-<div class="hr"></div>
-
-<div class="milosz">
-    <img src="" alt="">
-    <h1>Miłosz Kaczmarek</h1>
-    <p>Uczeń technikum im. Św Józefa w Kaliszu</p>
-</div>
+    <div class="container">
+        <div class="amelia">
+            <img src="Amelia.png" alt="" class="zdjecia">
+            <h1>Amelia Klar</h1>
+            <p>Uczennica technikum im. Św Józefa w Kaliszu</p>
+        </div>
+        
+        <div class="hr"></div>
+        
+        <div class="milosz">
+            <img src="css-logo.png" alt="" class="zdjecia">
+            <h1>Miłosz Kaczmarek</h1>
+            <p>Uczeń technikum im. Św Józefa w Kaliszu</p>
+        </div>
+    </div>
 </body>
 </html>
 
 
 
 <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Dosis, sans-serif; */
+    font-weight: 550;
+    }
+    html{
+        scroll-behavior: smooth;
+        font-family: "Fira Sans", sans-serif;
+    }
+    header{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 10%;
+        background: var(--menu-color);
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+        margin: 0;
+    }
+    #logo{
+        margin-right: auto;
+        align-items: left;
+        width: 35%;
+    }
     body{
         background: rgba(135, 135, 135, 0.12);
     }
     #logo{
         margin-right: auto;
     }
-    #Amelia{
-        border-radius: 419.5px;
-        width: 157px;
-        height: 155px;
-        left: 305px;
-        top: 341px;
-    }
-    h1{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 30px;
-    }
-    p{
-        font-family: 'Comfortaa';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28.4444px;
-        line-height: 32px;
+    .container{
         display: flex;
+        justify-content: center;
         align-items: center;
-        text-align: center;
-        letter-spacing: -0.015em;
     }
+    .zdjecia{
+        border-radius: 50%;
+        margin: 0 50px;
+    }
+    .napis{
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        margin: 0;
+    }
+
 </style>

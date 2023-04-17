@@ -11,9 +11,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: Dosis, sans-serif; */
+    font-weight: 550;
 }
 html{
     scroll-behavior: smooth;
+    font-family: "Fira Sans", sans-serif;
 }
 header{
     display: flex;
@@ -29,20 +32,19 @@ header{
 #logo{
     margin-right: auto;
     align-items: left;
-    width: 180px;
+    width: 35%;
 }
 /* Links */
 .links{
     position: relative;
-    font-family: 'Dosis', sans-serif;
     color: #5BCD65;
     text-decoration: none;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 25px;
 }
 .nav_links{
     list-style: none;
-    text-shadow: 2px 1px 4px var(--main-color)
+    /* text-shadow: 2px 1px 4px var(--main-color) */
 }
 .nav_links li{
     display: inline-block;
@@ -50,38 +52,43 @@ header{
 }
 /* End links edit */
 /* Section 1 */
-.section1{
-    font-family: 'Dosis', sans-serif;
-    background-image: url(main.jpg);
+.section1 {
+    background-image: url(hero.png);
     background-size: 80%;
     background-attachment: fixed;
     background-position: right top;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 100%;
-    justify-content: space-between;
     display: flex;
+    flex-direction: column;
+    place-content: center;
 }
-.section1 a{
-    font-family: 'Dosis', sans-serif;
-    width: auto;
-    position: absolute;
-    background: #5BCD65;
+.section1 h1 {
+    font-size: 68px;
+    margin-left: 200px;
+}
+.section1 a {
+    background-color: #5bcd65;
     border-radius: 6px;
     text-decoration: none;
     margin-top: 20px;
-}
-.content{
-    padding: 12%;
-    margin-top: 100px;
-    font-size: 22pt;
-}
-.content a{
-    box-shadow: 2px 1px 4px var(--main-color);
+    color: white;
+    padding: 10px;
+    margin-left: 200px;
+    align-self: start;
+    font-size: 24px;
+    font-weight: 500;
 }
 .section1 p{    
     margin: 10px;
     color: aliceblue;
+}
+.section1 a{
+    margin-left: 203px;
+    box-shadow: 2px 1px 4px var(--main-color);
+}
+.section1 h1{
+    font-family: Fira Sans, sans-serif;
 }
 /* End section 1 */
 /* Section 2 */
@@ -96,8 +103,8 @@ header{
 #section2 h1{
     margin-top: 50px;
     text-align: center;
-    font-size: 40pt;
-    text-shadow: 2px 1px 5px rgb(41, 41, 41);
+    font-size: 35pt;
+    /* text-shadow: 2px 1px 5px rgb(41, 41, 41); */
 }
 #section2 div{
     font-size: 15pt;
@@ -138,18 +145,19 @@ header{
 }
 /* End of section 2 */
 /* footer */
-footer{
-    background-color: rgb(245, 245, 245);
-    width: 100%;
-    position: absolute;
-}  
-footer p{
-    font-family: 'Dosis', sans-serif;
-    text-align: right;
-}
-footer a{
-    text-align: center;
+footer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4px 1%;
+    background: rgba(135, 135, 135, 0.12);
+  }
+  
+  footer a {
     text-decoration: none;
-    font-family: 'Fira Sans', sans-serif;
-    color: var(--second-color);
-}
+    color: black;
+    font-weight: bolder;
+    margin: 20px;
+  }
+  
