@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+
+    <title>Kurs HTML - UCZSIEZNAMI</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html" id="logo"><img src="logo.png" alt="logo strony" id="logo"></a>
+        <nav>
+            <ul class="nav_links">
+                <li class="links"><a href="./kurs-html.html" class="links">HTML</a></li>
+                <li class="links"><a href="./kurs-css.html" class="links">CSS</a></li>
+                <li class="links"><a href="kurs-js.html" class="links">JavaScript</a></li>
+                <li class="links"><a href="./portfolio.html" class="links">O nas</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <main>
+        <section class="wrapper">
+            <div class="columns">
+                <nav>
+                    <div class="side-menu">
+                        <h4>Nawigator</h4>
+                        <ul class="menu-links">
+                            <li><a href="#" class="navigate">Html - wprowadzenie</a></li>
+                            <li><a href="#about-html-code" class="navigate">Struktura</a></li>
+                            <li><a href="#znaczniki" class="navigate">Znaczniki</a>
+                            <ul class="tag-list">
+                                <li><a href="#akapit">Akapit</a></li>
+                                <li><a href="#pogrubienie">Pogrubienie</a></li>
+                                <li><a href="#kursywa">Kursywa</a></li>
+                                <li><a href="#podkreslenie">Podkreślenie</a></li>
+                                <li><a href="#obrazek">Wstawianie obrazka</a></li>
+                                <li><a href="#odsylacz">Odsyłacze</a></li>
+                                <li><a href="#naglowki">Nagłówki</a></li>
+                                <li><a href="#tabele">Tabele</a></li>
+                            </ul></li>
+                            <li><a href="#formularze" class="navigate">Formularze</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                
+                <div class="content-course">
+                    <div id="about-html"></div>
+                    <h1>Kurs HTML - wszystko co musisz wiedzieć, aby zacząć</h1>
+                    <h2 style="text-align: center;">1. Trochę słów o HTML</h2>
+                    <p>HTML, czyli HyperText Markup Language, to język służący do tworzenia struktur i zawartości stron internetowych. 
+                        HTML definiuje różne elementy, takie jak nagłówki, paragrafy, obrazy i linki, a także umożliwia tworzenie formularzy, 
+                        tabel i innych elementów interaktywnych na stronie internetowej. Kod HTML składa się z tagów (znaczników), 
+                        które określają, jak dany fragment tekstu lub element powinien być interpretowany przez przeglądarkę internetową.
+                        Przy użyciu HTML można również tworzyć linki, formularze, tabele i wiele innych elementów. 
+                        Jest to podstawowy język używany przy tworzeniu stron internetowych i jest często łączony z innymi technologiami, 
+                        takimi jak CSS (arkusze stylów) i JavaScript, aby uzyskać bardziej zaawansowane i interaktywne strony internetowe.</p><br>
+                    <div id="about-html-code">
+                        <h2 style="line-height: 22vh;">2. Struktura kodu</h2>
+                        <p style="margin-top: -60px;">Poniżej przykładowa struktura kodu:</p>
+                        <pre>
+                            <code>          
+&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&quot;pl&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;/&gt;
+        &lt;meta name=&quot;description&quot; content=&quot;&quot; /&gt;
+        &lt;meta name=&quot;keywords&quot; content=&quot;&quot; /&gt;
+        &lt;title&gt;Tytuł strony&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Nagł&oacute;wek h1&lt;/h1&gt;
+        &lt;/header&gt;
+                                
+        &lt;nav&gt;Nawigacja&lt;/nav&gt;
+                                
+        &lt;main&gt;
+            &lt;section&gt;
+                &lt;article&gt;
+                    &lt;h2&gt;Artykuł pierwszej w nagłówku h2&lt;/h2&gt;
+                    &lt;p&gt;To jest treść artykułu.&lt;/p&gt;
+                &lt;/article&gt;
+            &lt;/section&gt;
+        &lt;/main&gt;
+                                
+        &lt;footer&gt;
+        Stopka
+        &lt;/footer&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                        </pre>
+                        <div>
+                            
+                        </div>
+                    </div>    
+                    <div id="describe-code">
+                        <p>Wyjaśnienie poszczegółnych znaczników:</p><br>
+                        <ul>
+                            <li>html - określa, że strona jest dokumentem HTML.</li>
+                            <li>head - zawiera informacje o dokumencie, takie jak tytuł strony, meta tagi, styl CSS itp. Informacje te nie są wyświetlane w oknie przeglądarki.</li>
+                            <li>meta - definiuje informacje o dokumencie (opis strony, kodowanie znaków, słowa kluczowe itp.). Znacznik ten pomaga wyszukiwarkom internetowym w pozycjonowaniu strony</li>
+                            <li>title - określa tytuł strony internetowej, który jest wyświetlany na pasku tytułu przeglądarki.</li>
+                            <li>body - określa zawartość strony, która jest wyświetlana w przeglądarce internetowej. Wewnątrz elementu body znajdują się wszystkie elementy strony, takie jak nagłówki, tekst, obrazy, linki itp.</li>
+                            <li>header - nagłówek strony, który zazwyczaj zawiera logo, menu nawigacyjne i inne informacje na temat strony.</li>
+                            <li>main - definiuje główną treść strony, która jest zazwyczaj wyświetlana w centrum strony.</li>
+                            <li>nav -  określa menu nawigacyjne na stronie internetowej. </li>
+                            <li>section - sekcja strony internetowej, taka jak wpis na blogu, artykuł, galeria zdjęć itp.</li>
+                            <li>article - pojedynczy artykuł lub wpis na stronie internetowej.</li>
+                            <li>footer - zawiera informacje o autorze, prawach autorskich, linki do stron powiązanych itp.</li>
+                        </ul>
+                    </div>
+                    <div id="znaczniki">
+                            <h2>3. Znaczniki</h2>
+                            Znacznik jest to specjalny tekst umieszczony w nawiasach ostrych.  
+                            Jest częścią składni języka HTML i pozwala sterować wyglądem strony. 
+                            Dzięki niemu możesz np. ustalić kolor tła, rodzaj formatowania tekstu, wstawić obrazek czy tabelę itd.</div>
+                        
+                        <div id="akapit">
+                            <h3 style="line-height: 22vh; margin-bottom: -50px;">Akapit</h3>
+                            <p>Akapit zawsze zaczyna się od nowej linii i jest zazwyczaj blokiem tekstu.</p>
+                            <pre>
+                                <code style="height: 20%;">&lt;p&gt;To jest paragraf&lt;/p&gt;
+&lt;p&gt;To też jest paragraf&lt;/p&gt;</code>
+                            </pre>
+                        </div>
+                        <div id="pogrubienie">
+                            <h3 style="line-height: 22vh; margin-bottom: -50px;">Pogrubienie tekstu</h3>
+                            <p>Znacznik pogrubionego tekstu sprawi, że Twój tekst zostanie wyświetlony jako <b>pogrubiony</b>.</p>
+                            <pre>
+                                <code style="height: 20%;">&lt;b&gt;Pogrubiony tekst&lt;/b&gt;
+Normalny tekst</code>
+                            </pre>
+                        </div>
+                        <div id="kursywa">
+                            <h3 style="line-height: 22vh; margin-bottom: -50px;">Pochylenie tekstu - kursywa</h3>
+                            <p>Ten znacznik umożliwi Ci utworzenie tekstu <i>pochylonego</i></p>
+                            <pre>
+                                <code style="height: 20%;">&lt;i&gt;Pochylony tekst&lt;/i&gt;
+Normalny tekst</code>
+                        </div>
+                        <div id="podkreslenie">
+                            <h3 style="line-height: 20vh; margin-bottom: -50px;">Podkreślenie tekstu</h3>
+                            <p>Znacznik podkreslenia sprawi, że tekst jest <u>podreślony</u></p>
+                            <pre>
+                                <code style="height: 20%;">&lt;u&gt;Podkreślony tekst&lt;/u&gt;
+Normalny tekst</code>
+                        </div>
+                        
+                        <div id="obrazek">
+                            <h3 style="line-height: 22vh; margin-bottom: -50px;">Wstawianie obrazka</h3>
+                            <p>By wstawić zdjęcie, należy zastosować znacznik img.</p>
+                            <pre>
+                                <code>&lt;img src=&quot;ścieżka dostępu do obrazka&quot; alt=&quot;Tu podaj tekst alternatywny&quot;&gt;</code>
+                            </pre>
+                        </div>
+                        <div id="odsylacz">
+                            <h3 style="line-height: 22vh; margin-bottom: -50px;">Odsyłacze</h3>
+                            <p>Odsyłacze praktycznie znajdują się na każdej stronie. Może być on zawarty w wyróżnionym hasłowym tekście, bądź w formie obrazka.</p><br>
+                            Poniższy znacznik odsyła do podstrony:
+                            <pre>
+                                <code>&lt;a href=&quot;ścieżka dostępu do podstrony&quot;&gt;opis odsyłacza&lt;/a&gt;</code>
+                            </pre>
+                            <p>Istnieją także odsyłacze do adresu internetowego</p>
+                            <pre>
+                                <code>&lt;a href=&quot;adres internetowy&quot;&gt;opis odsyłacza&lt;/a&gt;</code>
+                            </pre>
+                        </div>
+                        <div id="naglowki">
+                            <h3 style="line-height: 22vh; margin-bottom: -50px;">Nagłówki</h3>
+                            Znaczniki h1, h2, h3, h4, h5, h6 są stosowane do oznaczenia nagłówka tekstu.
+                            Dla przykładu, tytuł artykułu na blogu będzie oznaczony h1 a podtytuł h2. Takie stopniowanie ważności kończy się na znaczniku h6.
+                            <pre>
+                                <code>&lt;h1&gt;Nagł&oacute;wek 1. stopnia&lt;/h1&gt;
+&lt;h2&gt;Nagł&oacute;wek 2. stopnia&lt;/h2&gt;
+&lt;h3&gt;Nagł&oacute;wek 3. stopnia&lt;/h3&gt;
+&lt;h4&gt;Nagł&oacute;wek 4. stopnia&lt;/h4&gt;
+&lt;h5&gt;Nagł&oacute;wek 5. stopnia&lt;/h5&gt;
+&lt;h6&gt;Nagł&oacute;wek 6. stopnia&lt;/h6&gt;</code>
+                            </pre>
+                        </div>
+                        <div id="tabele">
+                            <h3 style="line-height: 22vh; margin-bottom: -50px;"h3>Tabele</h3>
+                            <p>Tabele są obszarem, w którym można przedstawić jakieś dane.</p>
+                            <p style="margin-top: 50px;">Przykładowa struktura tabeli:</p> 
+                            <pre>
+                                <code>&lt;table&gt;
+&lt;tr&gt;
+    &lt;td&gt;kom&oacute;rka1&lt;/td&gt;	&lt;td&gt;kom&oacute;rka2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;kom&oacute;rka3&lt;/td&gt;	&lt;td&gt;kom&oacute;rka4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code>
+                            </pre>
+                        </div>
+                    
+                    <div id="formularze">
+                        <h3 style="line-height: 22vh; margin-bottom: -50px;">Formularze</h3>
+                        <p>Znacznik form jest wykorzystywany do stworzenia formularza. Znacznik ten same w sobie nie definiuje pól formularza takich jak "Imię" czy "Nazwisko", ale jest rodzicem dla tych pól.
+                            Najważniejszymi atrybutami znacznika form są action i method.</p>
+                            <pre>
+                                <code>&lt;form action=&quot;/send&quot; method=&quot;post&quot;&gt;
+   Imię: &lt;input type=&quot;text&quot; name=&quot;imie&quot;&gt;
+   Nazwisko: &lt;input type=&quot;text&quot; name=&quot;nazwisko&quot;&gt;
+   &lt;input type=&quot;submit&quot; value=&quot;Wyślij&quot;&gt;
+&lt;/form&gt;</code>
+                            </pre>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="./index.html" id="logo"><img src="logo.png" alt="logo strony"></a>
+        <a href="portfolio.html">Poczytaj o twórcach strony :3</a>
+        <p>© Strona chroniona prawami autorskimi</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
