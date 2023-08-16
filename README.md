@@ -1,2 +1,2 @@
 # stronka-PAI
-ładnie wyglądająca stronka o html i css. 
+https://milosian.github.io/codeway.github.io/
